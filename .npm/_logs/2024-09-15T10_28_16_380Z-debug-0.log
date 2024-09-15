@@ -1,0 +1,100 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.17.0
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/frontend/.npmrc
+5 silly config load:file:/home/user/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm install axios react-router-dom
+8 verbose argv "install" "axios" "react-router-dom"
+9 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2024-09-15T10_28_16_380Z-
+10 verbose logfile /home/user/.npm/_logs/2024-09-15T10_28_16_380Z-debug-0.log
+11 silly packumentCache heap:2114453504 maxSize:528613376 maxEntrySize:264306688
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest axios@*
+15 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/axios 1112ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/axios set size:undefined disposed:false
+18 silly fetch manifest react-router-dom@*
+19 silly packumentCache full:https://registry.npmjs.org/react-router-dom cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/react-router-dom 73ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/react-router-dom set size:undefined disposed:false
+22 silly fetch manifest react@^18.3.1
+23 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/react 95ms (cache revalidated)
+25 silly packumentCache full:https://registry.npmjs.org/react set size:4940395 disposed:false
+26 silly fetch manifest react-dom@^18.3.1
+27 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/react-dom 106ms (cache revalidated)
+29 silly packumentCache full:https://registry.npmjs.org/react-dom set size:5946121 disposed:false
+30 silly placeDep ROOT axios@1.7.7 OK for: frontend@0.1.0 want: *
+31 silly placeDep ROOT react-router-dom@6.26.2 OK for: frontend@0.1.0 want: *
+32 silly fetch manifest form-data@^4.0.0
+33 silly packumentCache full:https://registry.npmjs.org/form-data cache-miss
+34 silly fetch manifest proxy-from-env@^1.1.0
+35 silly packumentCache full:https://registry.npmjs.org/proxy-from-env cache-miss
+36 silly fetch manifest react-router@6.26.2
+37 silly packumentCache full:https://registry.npmjs.org/react-router cache-miss
+38 silly fetch manifest @remix-run/router@1.19.2
+39 silly packumentCache full:https://registry.npmjs.org/@remix-run%2frouter cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/form-data 23ms (cache hit)
+41 silly packumentCache full:https://registry.npmjs.org/form-data set size:117324 disposed:false
+42 http fetch GET 200 https://registry.npmjs.org/proxy-from-env 75ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/proxy-from-env set size:undefined disposed:false
+44 http fetch GET 200 https://registry.npmjs.org/@remix-run%2frouter 169ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/@remix-run%2frouter set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/react-router 201ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/react-router set size:undefined disposed:false
+48 silly placeDep node_modules/axios form-data@4.0.0 OK for: axios@1.7.7 want: ^4.0.0
+49 silly placeDep ROOT proxy-from-env@1.1.0 OK for: axios@1.7.7 want: ^1.1.0
+50 silly fetch manifest react@>=16.8
+51 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+52 http fetch GET 200 https://registry.npmjs.org/react 31ms (cache hit)
+53 silly packumentCache full:https://registry.npmjs.org/react set size:4940395 disposed:false
+54 silly placeDep ROOT @remix-run/router@1.19.2 OK for: react-router-dom@6.26.2 want: 1.19.2
+55 silly placeDep ROOT react-router@6.26.2 OK for: react-router-dom@6.26.2 want: 6.26.2
+56 silly reify moves {}
+57 verbose stack Error: EACCES: permission denied, mkdir '/home/frontend/node_modules/fsevents'
+57 verbose stack     at async mkdir (node:internal/fs/promises:858:10)
+57 verbose stack     at async /usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:624:20
+57 verbose stack     at async Promise.allSettled (index 0)
+57 verbose stack     at async [reifyPackages] (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:325:11)
+57 verbose stack     at async Arborist.reify (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:142:5)
+57 verbose stack     at async Install.exec (/usr/lib/node_modules/npm/lib/commands/install.js:150:5)
+57 verbose stack     at async Npm.exec (/usr/lib/node_modules/npm/lib/npm.js:207:9)
+57 verbose stack     at async module.exports (/usr/lib/node_modules/npm/lib/cli/entry.js:74:5)
+58 error code EACCES
+59 error syscall mkdir
+60 error path /home/frontend/node_modules/fsevents
+61 error errno -13
+62 error Error: EACCES: permission denied, mkdir '/home/frontend/node_modules/fsevents'
+62 error     at async mkdir (node:internal/fs/promises:858:10)
+62 error     at async /usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:624:20
+62 error     at async Promise.allSettled (index 0)
+62 error     at async [reifyPackages] (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:325:11)
+62 error     at async Arborist.reify (/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:142:5)
+62 error     at async Install.exec (/usr/lib/node_modules/npm/lib/commands/install.js:150:5)
+62 error     at async Npm.exec (/usr/lib/node_modules/npm/lib/npm.js:207:9)
+62 error     at async module.exports (/usr/lib/node_modules/npm/lib/cli/entry.js:74:5) {
+62 error   errno: -13,
+62 error   code: 'EACCES',
+62 error   syscall: 'mkdir',
+62 error   path: '/home/frontend/node_modules/fsevents'
+62 error }
+63 error
+63 error The operation was rejected by your operating system.
+63 error It is likely you do not have the permissions to access this file as the current user
+63 error
+63 error If you believe this might be a permissions issue, please double-check the
+63 error permissions of the file and its containing directories, or try running
+63 error the command again as root/Administrator.
+64 silly unfinished npm timer reify 1726396096854
+65 silly unfinished npm timer reify:createSparse 1726396100774
+66 verbose cwd /home/frontend
+67 verbose os Linux 5.10.186+
+68 verbose node v20.17.0
+69 verbose npm  v10.8.2
+70 verbose exit -13
+71 verbose code -13
+72 error A complete log of this run can be found in: /home/user/.npm/_logs/2024-09-15T10_28_16_380Z-debug-0.log
